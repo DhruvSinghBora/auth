@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration xmlns="urn:activemq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:activemq /schema/artemis-configuration.xsd">
+  <core xmlns="urn:activemq:core" xsi:schemaLocation="urn:activemq:core ">
+
+      <addresses>
+
+         <address name="IOT.RFID.IN">
+            <anycast>
+               <queue name="IOT.RFID.IN"/>
+            </anycast>
+    </address>
+    <address name="IOT.RFID.OUT">
+            <anycast>
+               <queue name="IOT.RFID.OUT"/>
+            </anycast>
+	    </address>
+      <address name="IOT.WEATHER">
+            <anycast>
+               <queue name="IOT.WEATHER"/>
+            </anycast>
+    </address>
+<address name="IOT.ENERGYMETER">
+            <anycast>
+               <queue name="IOT.ENERGYMETER"/>
+            </anycast>
+    </address>
+<address name="IOT.OXYGENMETER">
+            <anycast>
+               <queue name="IOT.OXYGENMETER"/>
+            </anycast>
+    </address>
+	    </addresses>
+  </core>
+</configuration>
